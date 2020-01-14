@@ -1,0 +1,26 @@
+#!/bin/bash
+
+sxhkd &
+
+bspc monitor DVI-D-1 -d I II III
+bspc monitor HDMI-A-0 -d IV V VI
+
+bspc config border_width 3
+bspc config window_gap 16
+
+bspc config split_ratio 0.5
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+bspc config merge_overlapping_monitors false
+bspc config automatic_scheme longest_side
+
+picom -b --config $HOME/.config/compton/config
+feh --no-fehbg --bg-fill $HOME/.config/wallpaper
+xset r rate 180 50
+
+# rules
+# eve online
+bspc rule -a Wine:explorer.exe state=floating
+
+# zathura
+bspc rule -a Zathura state=tiled
