@@ -19,6 +19,10 @@ feh --no-fehbg --bg-fill $HOME/.config/wallpaper
 xset r rate 180 50
 
 # rules
+
+# Wine general
+bspc rule -a Wine state=tiled
+
 # eve online
 bspc rule -a Wine:explorer.exe state=floating
 
