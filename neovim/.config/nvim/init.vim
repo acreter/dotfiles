@@ -84,3 +84,9 @@ silent! colorscheme acretercolor
 
 " terminal mode
 tnoremap <Esc> <C-\><C-n>
+
+" german umlauts
+inoremap ö {
+inoremap ä }
+inoremap Ö [
+inoremap Ä ]
