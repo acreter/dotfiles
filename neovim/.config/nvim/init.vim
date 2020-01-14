@@ -90,3 +90,20 @@ inoremap ö {
 inoremap ä }
 inoremap Ö [
 inoremap Ä ]
+
+" snippets
+" c
+nnoremap <Leader>for :-1read $HOME/.config/nvim/snippets/c/for<CR>4la
+nnoremap <Leader>while :-1read $HOME/.config/nvim/snippets/c/while<CR>6la
+nnoremap <Leader>dowhile :-1read $HOME/.config/nvim/snippets/c/dowhile<CR>ja
+nnoremap <Leader>if :-1read $HOME/.config/nvim/snippets/c/if<CR>3a
+
+" tex
+nnoremap <Leader>begin :-1read $HOME/.config/nvim/snippets/tex/begin<CR>6la
+nnoremap <Leader>itemize :-1read $HOME/.config/nvim/snippets/tex/itemize<CR>jA
+nnoremap <Leader>lemma :-1read $HOME/.config/nvim/snippets/tex/lemma<CR>ja
+nnoremap <Leader>theorem :-1read $HOME/.config/nvim/snippets/tex/theorem<CR>ja
+nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
+
+" marker
+inoremap ß <ESC>/<marker><CR>cf>
