@@ -107,3 +107,8 @@ nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
 
 " marker
 inoremap ß <ESC>/<marker><CR>cf>
+
+" plugins
+call plug#begin()
+Plug 'christoomey/vim-tmux-navigator'
+call plug#end()
