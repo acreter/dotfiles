@@ -9,7 +9,7 @@ set cpo&vim
 
 " text {{{
 
-hi Normal       guifg=#ffffff       guibg=#131313       gui=NONE
+hi Normal       guifg=#ffe6b3       guibg=#131313       gui=NONE
             \   ctermfg=white       ctermbg=black       cterm=NONE
 
 hi Folded       guifg=#c2bfa5       guibg=#050505       gui=underline
