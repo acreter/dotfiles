@@ -10,7 +10,6 @@ export HISTTIMEFORMAT="%d.%m.%y %T "
 alias ls='ls --color=auto'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
-alias qpdf='pdftotext -layout -eol unix '
 
 # read pdf on tty. requires poppler
 pdftty() {
