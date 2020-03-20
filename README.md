@@ -1,4 +1,5 @@
-All directories at the root of this repository are GNU Stow packages. Note that this is just a quick dump
-and therefore specialized for my machines. You should probably just take these packages as reference.
+All directories at the root of this repository are GNU Stow packages.
+The target directory should be your home directory.
+Make sure that the directory "$HOME/.config" exists.
 
 ~ac
