@@ -4,13 +4,13 @@
 [[ $- != *i* ]] && return
 
 export EDITOR=/usr/bin/nvim
-export PAGER=less
+export PAGER=/usr/bin/less
 export HISTTIMEFORMAT="%d.%m.%y %T "
 
 alias ls='ls --color=auto'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
-alias qpdf='pdftotext -layout -eol unix -fixed 4 '
+alias qpdf='pdftotext -layout -eol unix '
 
 # read pdf on tty. requires poppler
 pdftty() {
@@ -24,7 +24,7 @@ colorreset() {
 }
 
 colorfg() {
-	echo "$(tput setaf $1)$2\e[m"
+	echo "$(tput setaf $1)$2$(colorreset)"
 }
 
 colorbg() {
