@@ -87,10 +87,10 @@ silent! colorscheme acretercolor
 tnoremap <Esc> <C-\><C-n>
 
 " german umlauts
-inoremap ö {
-inoremap ä }
-inoremap Ö [
-inoremap Ä ]
+inoremap ö [
+inoremap ä ]
+inoremap Ö {
+inoremap Ä }
 
 " snippets
 " c
