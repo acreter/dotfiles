@@ -36,7 +36,7 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set nojoinspaces
-set nowrap
+" set nowrap
 
 set conceallevel=0
 
