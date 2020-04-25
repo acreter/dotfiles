@@ -68,6 +68,7 @@ highlight ColorColumn ctermbg=red
 
 " toggle between relative and normal line numbering
 nnoremap <silent><F2> :set rnu!<CR>
+nnoremap <F3> :!make<CR>
 
 " leader-key
 let mapleader = ","
