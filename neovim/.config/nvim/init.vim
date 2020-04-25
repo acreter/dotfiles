@@ -5,7 +5,7 @@
 
 " make this .vimrc extensible
 " set exrc	" I think this is not needed since this file should be at the
-		" default path
+			" default path
 set secure
 
 " basic appearence
@@ -15,6 +15,8 @@ set number
 set relativenumber
 set termguicolors
 set background=dark
+
+autocmd VimResized * :wincmd =
 
 " searching
 set incsearch
