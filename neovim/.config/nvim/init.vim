@@ -99,6 +99,8 @@ inoremap ä ]
 inoremap Ö {
 inoremap Ä }
 
+nnoremap ö <c-]>
+
 " snippets
 " c
 nnoremap <Leader>for :-1read $HOME/.config/nvim/snippets/c/for<CR>4la
