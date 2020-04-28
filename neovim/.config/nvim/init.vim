@@ -59,6 +59,11 @@ set wmw=0
 nmap <C-h> <c-w>h
 nmap <C-l> <c-w>l
 
+set splitbelow
+set splitright
+
+nnoremap <Leader>t <c-w><c-p>
+
 " backup and safety
 set nobackup
 set writebackup
@@ -110,3 +115,6 @@ nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
 
 " marker
 inoremap ß <ESC>/<marker><CR>cf>
+
+" man
+set keywordprg=:bo\ :vert\ :Man
