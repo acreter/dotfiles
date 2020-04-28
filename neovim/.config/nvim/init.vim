@@ -62,7 +62,7 @@ nmap <C-l> <c-w>l
 set splitbelow
 set splitright
 
-nnoremap <Leader>t <c-w><c-p>
+nnoremap <Leader>r <c-w><c-p>
 
 " backup and safety
 set nobackup
