@@ -19,15 +19,15 @@ pdftty() {
 
 # prompt
 colorreset() {
-	echo "\e[m"
+	echo -e "\001\e[m\002"
 }
 
 colorfg() {
-	echo "$(tput setaf $1)$2$(colorreset)"
+	echo -e "\001$(tput setaf $1)\002$2$(colorreset)"
 }
 
 colorbg() {
-	echo "$(tput setab $1)$2$(colorreset)"
+	echo -e "\001$(tput setab $1)\002$2$(colorreset)"
 }
 
 [ -z $SSH_CLIENT ] || SSH_PROMPT=" $(colorbg 1 ' SSH ')"
