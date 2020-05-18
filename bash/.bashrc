@@ -14,6 +14,7 @@ alias ls='ls -h --color=auto --group-directories-first'
 alias cr='quickrepo'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
+alias evim='$EDITOR $HOME/.config/nvim/init.vim'
 
 # read pdf on tty. requires poppler
 pdftty() {

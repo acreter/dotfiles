@@ -83,7 +83,6 @@ let mapleader = ","
 " close current buffer (go back to previous one)"
 nnoremap <Leader>d :bd<CR>
 
-nnoremap <Leader>c bce
 nnoremap <Leader>o o<ESC><up>
 nnoremap <Leader>O O<ESC><down>
 nnoremap <Leader>t i/* TODO:  */<ESC>2hi
