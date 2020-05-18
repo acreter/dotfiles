@@ -49,4 +49,4 @@ export SHELL_LOGIN_TIME=$(date "+%H:%M")
 
 # print greeting
 clear
-echo -e This is $(colorfg 1 "$HOSTNAME") running on $(colorfg 1 "$(uname -sr)") at $(colorfg 1 "$SHELL_LOGIN_TIME").
+echo -e This is $(colorfg 1 "$HOSTNAME") running on $(colorfg 1 "$(uname -sr)") at$(colorfg 1 " $SHELL_LOGIN_TIME").
