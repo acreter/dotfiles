@@ -6,8 +6,12 @@
 export EDITOR=/usr/bin/nvim
 export PAGER=/usr/bin/less
 export HISTTIMEFORMAT="%d.%m.%y %T "
+export REPOS="$HOME/repos"
 
-alias ls='ls --color=auto'
+export PATH="~/exec:$PATH"
+
+alias ls='ls -h --color=auto --group-directories-first'
+alias cr='quickrepo'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
 
@@ -16,6 +20,13 @@ pdftty() {
 	[ -z "$1" ] && return
 	pdftotext -q "$1" - 2>&1 > /dev/null && pdftotext -layout -eol unix "$1" - | $PAGER
 }
+
+# quick cd to a repo
+quickrepo() {
+	[ -z "$1" ] && return
+	cd $(find $REPOS -type d -name "$1")
+}
+
 
 # prompt
 colorreset() {
