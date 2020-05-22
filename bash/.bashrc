@@ -5,16 +5,31 @@
 
 export EDITOR=/usr/bin/nvim
 export PAGER=/usr/bin/less
+export PDFREADER=/usr/bin/zathura
 export HISTTIMEFORMAT="%d.%m.%y %T "
 export REPOS="$HOME/repos"
 
-export PATH="~/exec:$PATH"
+export MENUCONFIG_COLOR="blackbg"
 
 alias ls='ls -h --color=auto --group-directories-first'
 alias cr='quickrepo'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
 alias evim='$EDITOR $HOME/.config/nvim/init.vim'
+
+alias xi='sudo xbps-install'
+alias xr='sudo xbps-remove'
+alias xq='xbps-query'
+
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gf='git fetch'
+alias gm='git merge'
+alias gpull='git pull'
+alias gpush='git push'
+
+alias sbash='source $HOME/.bashrc'
 
 # read pdf on tty. requires poppler
 pdftty() {
@@ -25,7 +40,7 @@ pdftty() {
 # quick cd to a repo
 quickrepo() {
 	[ -z "$1" ] && return
-	cd $(find $REPOS -type d -name "$1")
+	cd $(find $REPOS -type d -name "$1" | sed 1q)
 }
 
 
