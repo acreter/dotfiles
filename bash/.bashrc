@@ -7,7 +7,7 @@ export EDITOR=/usr/bin/nvim
 export PAGER=/usr/bin/less
 export PDFREADER=/usr/bin/zathura
 export HISTTIMEFORMAT="%d.%m.%y %T "
-export REPOS="$HOME/repos"
+export REPOS="$HOME/repos/"
 
 export MENUCONFIG_COLOR="blackbg"
 
@@ -21,6 +21,7 @@ alias xi='sudo xbps-install'
 alias xr='sudo xbps-remove'
 alias xq='xbps-query'
 
+alias gd='git diff'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
