@@ -8,6 +8,7 @@ export PAGER=/usr/bin/less
 export PDFREADER=/usr/bin/zathura
 export HISTTIMEFORMAT="%d.%m.%y %T "
 export REPOS="$HOME/repos/"
+export MPD_HOST="$HOME/.config/mpd/socket"
 
 export MENUCONFIG_COLOR="blackbg"
 
@@ -16,6 +17,8 @@ alias cr='quickrepo'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
 alias evim='$EDITOR $HOME/.config/nvim/init.vim'
+alias mpv='mpv --volume=20'
+alias yda='youtube-dl -x -f bestaudio/best'
 
 alias xi='sudo xbps-install'
 alias xr='sudo xbps-remove'
