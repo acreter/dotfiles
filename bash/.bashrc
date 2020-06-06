@@ -3,12 +3,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+set -o vi
+
 export EDITOR=/usr/bin/nvim
 export PAGER=/usr/bin/less
 export PDFREADER=/usr/bin/zathura
 export HISTTIMEFORMAT="%d.%m.%y %T "
 export REPOS="$HOME/repos/"
 export MPD_HOST="$HOME/.config/mpd/socket"
+export IMAGE=/usr/bin/sxiv
 
 export MENUCONFIG_COLOR="blackbg"
 
@@ -19,6 +22,7 @@ alias ebash='$EDITOR $HOME/.bashrc'
 alias evim='$EDITOR $HOME/.config/nvim/init.vim'
 alias mpv='mpv --volume=20'
 alias yda='youtube-dl -x -f bestaudio/best'
+alias query-wallpaper='"$IMAGE" -t $(cat "$WP_LIST")'
 
 alias xi='sudo xbps-install'
 alias xr='sudo xbps-remove'
