@@ -5,16 +5,6 @@
 
 set -o vi
 
-export EDITOR=/usr/bin/nvim
-export PAGER=/usr/bin/less
-export PDFREADER=/usr/bin/zathura
-export HISTTIMEFORMAT="%d.%m.%y %T "
-export REPOS="$HOME/repos/"
-export MPD_HOST="$HOME/.config/mpd/socket"
-export IMAGE=/usr/bin/sxiv
-
-export MENUCONFIG_COLOR="blackbg"
-
 alias ls='ls -h --color=auto --group-directories-first'
 alias cr='quickrepo'
 alias vim='nvim'
