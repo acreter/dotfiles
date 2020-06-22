@@ -69,13 +69,11 @@ set nobackup
 set writebackup
 set noswapfile
 
-" colorcolumn to avoid long lines
-set colorcolumn=80
-highlight ColorColumn ctermbg=red
-
 " toggle between relative and normal line numbering
 nnoremap <silent><F2> :set rnu!<CR>
 nnoremap <F3> :!make<CR>
+nnoremap <silent><F4> :!make && find . -maxdepth 1 -executable -type f -exec '{}' \;<CR>
+nnoremap <F5> :!./run<CR>
 
 " leader-key
 let mapleader = ","
@@ -85,7 +83,8 @@ nnoremap <Leader>d :bd<CR>
 
 nnoremap <Leader>o o<ESC><up>
 nnoremap <Leader>O O<ESC><down>
-nnoremap <Leader>t i/* TODO:  */<ESC>2hi
+nnoremap <Leader>t a/* TODO:  */<ESC>2hi
+nnoremap <Leader>c a/*  */<ESC>2hi
 
 silent! colorscheme acretercolor
 
@@ -119,3 +118,8 @@ inoremap ß <ESC>/<marker><CR>cf>
 
 " man
 set keywordprg=:bo\ :vert\ :Man
+
+" colorcolumn to avoid long lines
+set colorcolumn=65
+hi ColorColumn  guifg=#ff0000          guibg=DarkCyan       gui=NONE
+            \   ctermfg=NONE        ctermbg=grey        cterm=NONE

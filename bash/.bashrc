@@ -3,14 +3,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-set -o vi
+#set -o vi
 
 alias ls='ls -h --color=auto --group-directories-first'
 alias cr='quickrepo'
 alias vim='nvim'
 alias ebash='$EDITOR $HOME/.bashrc'
+alias ebashp='$EDITOR $HOME/.bash_profile'
 alias evim='$EDITOR $HOME/.config/nvim/init.vim'
-alias mpv='mpv --volume=20'
 alias yda='youtube-dl -x -f bestaudio/best'
 alias query-wallpaper='"$IMAGE" -t $(cat "$WP_LIST")'
 
