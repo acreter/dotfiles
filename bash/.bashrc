@@ -42,9 +42,18 @@ pdftty() {
 # quick cd to a repo
 quickrepo() {
 	[ -z "$1" ] && return
-	cd $(find $REPOS -type d -name "$1" | sed 1q)
+	cd $(find $REPOS -type d -name "*$1*" | sed 1q)
 }
 
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m'\
+    LESS_TERMCAP_me=$'\e[0m'\
+    LESS_TERMCAP_us=$'\e[01;32m'\
+    LESS_TERMCAP_ue=$'\e[0m'\
+    LESS_TERMCAP_so=$'\e[45;93m'\
+    LESS_TERMCAP_se=$'\e[0m'\
+    /usr/bin/man "$@"
+}
 
 # prompt
 colorreset() {
