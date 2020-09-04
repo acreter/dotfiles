@@ -86,6 +86,9 @@ nnoremap <Leader>O O<ESC><down>
 nnoremap <Leader>t a/* TODO:  */<ESC>2hi
 nnoremap <Leader>c a/*  */<ESC>2hi
 
+nnoremap <silent><Leader>v :vsplit<CR>
+nnoremap <silent><Leader>h :split<CR>
+
 silent! colorscheme acretercolor
 
 " terminal mode
