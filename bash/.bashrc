@@ -3,6 +3,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+shopt -s histappend
 #set -o vi
 
 alias ls='ls -h --color=auto --group-directories-first'
