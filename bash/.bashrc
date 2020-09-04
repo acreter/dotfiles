@@ -70,10 +70,10 @@ colorbg() {
 
 [ -z $SSH_CLIENT ] || SSH_PROMPT=" $(colorbg 1 ' SSH ')"
 
-PS1="$(colorfg 1 [)\u$(colorfg 2 @)\h$(colorfg 1 ]) $(colorfg 1 [)\w$(colorfg 1 ])$SSH_PROMPT\n$(colorfg 5 %) "
-
 export SHELL_LOGIN_TIME=$(date "+%H:%M")
 
 # print greeting
 clear
 echo -e This is $(colorfg 1 "$HOSTNAME") running on $(colorfg 1 "$(uname -sr)") at$(colorfg 1 " $SHELL_LOGIN_TIME").
+
+PS1="$(colorfg 1 [)\u$(colorfg 2 @)\h$(colorfg 1 ]) $(colorfg 1 [)\w$(colorfg 1 ])$SSH_PROMPT\n$(colorfg 5 %) "
