@@ -153,4 +153,7 @@ endfunction
 call plug#begin('~/.local/share/nvim/site/autoload/plugged')
 	Plug 'benmills/vimux'
 	nnoremap <Leader>vp :VimuxPromptCommand<CR>
+	Plug 'morhetz/gruvbox'
+	Plug 'mhartington/oceanic-next'
+	Plug 'qpkorr/vim-renamer'
 call plug#end()
