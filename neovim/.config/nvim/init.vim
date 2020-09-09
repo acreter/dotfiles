@@ -23,6 +23,9 @@ set incsearch
 set ignorecase
 set hlsearch
 
+" filetype
+filetype on
+
 " poor man's fuzzy find (searches recursivly in sub-directories + tab
 " completion)
 set path+=**
@@ -104,19 +107,19 @@ nnoremap ö <c-]>
 
 " snippets
 " c
-nnoremap <Leader>for :-1read $HOME/.config/nvim/snippets/c/for<CR>4la
-nnoremap <Leader>while :-1read $HOME/.config/nvim/snippets/c/while<CR>6la
-nnoremap <Leader>dowhile :-1read $HOME/.config/nvim/snippets/c/dowhile<CR>ja
-nnoremap <Leader>if :-1read $HOME/.config/nvim/snippets/c/if<CR>3a
+autocmd Filetype c nnoremap <Leader>for :-1read $HOME/.config/nvim/snippets/c/for<CR>4la
+autocmd Filetype c nnoremap <Leader>while :-1read $HOME/.config/nvim/snippets/c/while<CR>6la
+autocmd Filetype c nnoremap <Leader>dowhile :-1read $HOME/.config/nvim/snippets/c/dowhile<CR>ja
+autocmd Filetype c nnoremap <Leader>if :-1read $HOME/.config/nvim/snippets/c/if<CR>3a
 
 " tex
-nnoremap <Leader>begin :-1read $HOME/.config/nvim/snippets/tex/begin<CR>6la
-nnoremap <Leader>itemize :-1read $HOME/.config/nvim/snippets/tex/itemize<CR>jA
-nnoremap <Leader>lemma :-1read $HOME/.config/nvim/snippets/tex/lemma<CR>ja
-nnoremap <Leader>theorem :-1read $HOME/.config/nvim/snippets/tex/theorem<CR>ja
-nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
-nnoremap <Leader>math i$$<ESC>i
-nnoremap <Leader>mathcal i\mathcal{}<ESC>i
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>begin :-1read $HOME/.config/nvim/snippets/tex/begin<CR>6la
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>itemize :-1read $HOME/.config/nvim/snippets/tex/itemize<CR>jA
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>lemma :-1read $HOME/.config/nvim/snippets/tex/lemma<CR>ja
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>theorem :-1read $HOME/.config/nvim/snippets/tex/theorem<CR>ja
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>math i$$<ESC>i
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>mathcal i\mathcal{}<ESC>i
 
 " marker
 inoremap ß <ESC>/<marker><CR>cf>
