@@ -118,8 +118,8 @@ autocmd Filetype tex,latex,plaintex nnoremap <Leader>itemize :-1read $HOME/.conf
 autocmd Filetype tex,latex,plaintex nnoremap <Leader>lemma :-1read $HOME/.config/nvim/snippets/tex/lemma<CR>ja
 autocmd Filetype tex,latex,plaintex nnoremap <Leader>theorem :-1read $HOME/.config/nvim/snippets/tex/theorem<CR>ja
 autocmd Filetype tex,latex,plaintex nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
-autocmd Filetype tex,latex,plaintex nnoremap <Leader>math i$$<ESC>i
-autocmd Filetype tex,latex,plaintex nnoremap <Leader>mathcal i\mathcal{}<ESC>i
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>m i$$<ESC>i
+autocmd Filetype tex,latex,plaintex nnoremap <Leader>mc i\mathcal{}<ESC>i
 
 " marker
 inoremap ß <ESC>/<marker><CR>cf>
