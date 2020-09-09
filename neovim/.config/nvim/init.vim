@@ -115,6 +115,8 @@ nnoremap <Leader>itemize :-1read $HOME/.config/nvim/snippets/tex/itemize<CR>jA
 nnoremap <Leader>lemma :-1read $HOME/.config/nvim/snippets/tex/lemma<CR>ja
 nnoremap <Leader>theorem :-1read $HOME/.config/nvim/snippets/tex/theorem<CR>ja
 nnoremap <Leader>proof :-1read $HOME/.config/nvim/snippets/tex/proof<CR>ja
+nnoremap <Leader>math i$$<ESC>i
+nnoremap <Leader>mathcal i\mathcal{}<ESC>i
 
 " marker
 inoremap ß <ESC>/<marker><CR>cf>
